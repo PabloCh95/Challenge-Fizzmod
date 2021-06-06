@@ -1,0 +1,7 @@
+@import "../../scss/index.scss";
+
+.header {
+  display: flex !important;
+  background-color: $white-color;
+  flex-direction: row;
+}

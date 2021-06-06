@@ -1,0 +1,13 @@
+@import "../../../scss/index.scss";
+.menu {
+  background-color: $primary-color;
+  display: flex;
+  ul {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+}
