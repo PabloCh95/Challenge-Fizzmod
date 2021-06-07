@@ -3,5 +3,17 @@
 .header {
   display: flex !important;
   background-color: $white-color;
-  flex-direction: row;
+  flex-direction: column;
+  &__top {
+    display: flex;
+    flex-direction: row;
+    img {
+      padding: 2rem;
+    }
+    &__components {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
