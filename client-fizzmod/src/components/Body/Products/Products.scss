@@ -1,0 +1,14 @@
+@import "../../../scss/index.scss";
+
+.products {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 0;
+  }
+  &__box {
+    display: flex;
+    width: 100%;
+  }
+}

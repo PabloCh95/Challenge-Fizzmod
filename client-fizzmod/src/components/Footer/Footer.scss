@@ -1,0 +1,20 @@
+@import "../../scss/index.scss";
+
+.footer {
+  display: flex;
+  background-color: $dark;
+  color: $white-color;
+  justify-content: space-evenly;
+  h3 {
+    font-size: small;
+    text-align: start;
+    border-bottom: 1px solid $white-color;
+  }
+  li {
+    text-align: start;
+    list-style: none;
+    a {
+      text-decoration: none;
+    }
+  }
+}
