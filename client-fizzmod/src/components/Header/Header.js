@@ -8,15 +8,17 @@ import './Header.scss';
 
 export default function Header() {
     return (
-        <div className="header">
+        <header className="header">
              <div className="header__top">
-                 <a href="/"><img src={ Logo } alt="Fizzmod"/></a>
+                 <a className="header__a"href="/"><img src={ Logo } alt="Fizzmod"/></a>
                  <div className="header__top__components">
                     <TopNav />
                     <Search />
                  </div>
              </div>
+             <div className="header__menu">
              <Menu/>
-        </div>
+             </div>
+        </header>
     )
 }

@@ -6,9 +6,10 @@ import './Footer.scss'
 
 export default function Footer() {
     return (
-        <div className="footer">
+        <footer className="footer">
             <div>
                 <h3>PRODUCTOS</h3>
+            <ul>
                 <li>
                     <a href="#">Compre Junto</a>
                 </li>
@@ -24,9 +25,11 @@ export default function Footer() {
                 <li>
                     <a href="#">Sin Stock</a>
                 </li>
+            </ul>
             </div>
             <div>
                 <h3>MI CUENTA</h3>
+            <ul>
                 <li>
                     <a href="#">Mis pedidos</a>
                 </li>
@@ -42,17 +45,20 @@ export default function Footer() {
                 <li>
                     <a href="#">Mis recetas</a>
                 </li>
+            </ul>
             </div>
             <div>
                 <h3>CONTACTANOS</h3>
+            <ul>
                 <li>
                     <a href="#">Nuestras Sucursales</a>
                 </li>
                 <li>
                     <a href="#">Horarios y Telefonos</a>
                 </li>
+            </ul>
             </div>
             <SocialLinks />
-        </div>
+        </footer>
     )
 }

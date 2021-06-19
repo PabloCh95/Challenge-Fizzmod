@@ -19,14 +19,14 @@ export default function Menu() {
     },[])
 
     return (
-        <div className="menu">
+        <ul className="menu">
             {menuData.map( (data) => {
                 
-               return(<ul key={data.title}>
+               return(<li key={data.title}>
                     <a href={data.href}>{data.title}</a>
-                </ul>);
+                </li>);
             })
             }
-        </div>
+        </ul>
     )
 }
