@@ -13,14 +13,14 @@ export default function BannerSlider({slides}) {
             navButtonsAlwaysVisible={true}
             navButtonsProps={{
                 style: {
-                    backgroundColor:"rgb(0,0,0,0.2)",
+                    backgroundColor:"rgb(0,0,0,0)",
                     color:"#ffffff",
                     border:0,
                 }
             }}
         >
            { slides.map( item =>{
-               return(<a key={item.imgName} href={item.href}><img src={image(item.imgName)} alt={item.imgName}/></a>)
+               return(<a className="carousel__a" key={item.imgName} href={item.href}><img src={image(item.imgName)} alt={item.imgName}/></a>)
 
             })}
         </Carousel>
