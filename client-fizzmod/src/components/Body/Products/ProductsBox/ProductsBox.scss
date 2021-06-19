@@ -11,6 +11,15 @@
   a:hover {
     text-decoration: none;
   }
+  a:hover {
+    img {
+      opacity: 0.6;
+      transition: 0.5s;
+    }
+    &__title {
+      color: $primary-color;
+    }
+  }
   &__listPrice {
     text-decoration: line-through;
     color: $grey;
