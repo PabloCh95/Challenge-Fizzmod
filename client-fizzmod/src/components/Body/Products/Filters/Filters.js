@@ -1,21 +1,26 @@
-import React,{ useEffect, useState } from 'react'
+import React from 'react'
+import {FaCheck} from 'react-icons/fa'
 
 import './Filters.scss'
 
-export default function Filters({filters, setDataFilters}) {
-//tengo que rehacer esto porque aumenta su complejidad y puede hacerlo lento
+export default function Filters({filtersSelected, filters, setDataFilters}) {
+
 const onChangeFilters= (event) =>{
-    event.preventDefault()
-    setDataFilters(event.target.value);
+    if(filtersSelected.includes(event.target.value)) {
+        let auxFilters = [...filtersSelected];
+        auxFilters.splice(auxFilters.indexOf(event.target.value),1);
+        setDataFilters(auxFilters);
+    }
+    else setDataFilters([...filtersSelected, event.target.value]);
 }
     return (
-        <div>
+        <div className="filter-box">
           {
-              filters.map( item =>{
+              filters.map( (item, index) =>{
                   
 
-                  return(<div>
-                      <h1>{item.title}</h1>
+                  return(<div key={index}>
+                      <h1 className="filter-box__h1-title">{item.title}</h1>
                         <Checkbox data={item} onChangeFilters={onChangeFilters}/>
                       </div>)
                   
@@ -28,10 +33,13 @@ const onChangeFilters= (event) =>{
 
 function Checkbox({data, onChangeFilters }){
 
-   return( data.values.map(item => {
-        return (<div>
-            <input type="checkbox" value={item} name={item} onChange={onChangeFilters}/>
-            <label>{item}</label>
+   return(<form>
+       {data.values.map(item => {
+        return (<div className="filter-box__checkbox" key={item}>
+            <input className="filter-box__input" type="checkbox" value={item} id={item} onChange={onChangeFilters}/>
+            <span className="filter-box__box" id={item} htmlFor={item}><FaCheck color="#fff" size="1rem"/></span>
+            <label htmlFor={item}>{item}</label>
         </div>)
-     }))
+     })}
+   </form>)
 }

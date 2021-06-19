@@ -1,5 +1,7 @@
 import React from 'react'
 
+import SocialLinks from './SocialLinks'
+
 import './Footer.scss'
 
 export default function Footer() {
@@ -8,49 +10,49 @@ export default function Footer() {
             <div>
                 <h3>PRODUCTOS</h3>
                 <li>
-                    <a>Compre Junto</a>
+                    <a href="#">Compre Junto</a>
                 </li>
                 <li>
-                    <a>Kit Look</a>
+                    <a href="#">Kit Look</a>
                 </li>
                 <li>
-                    <a>Completa tu compra</a>
+                    <a href="#">Completa tu compra</a>
                 </li>
                 <li>
-                    <a>Shop the look</a>
+                    <a href="#">Shop the look</a>
                 </li>
                 <li>
-                    <a>Sin Stock</a>
+                    <a href="#">Sin Stock</a>
                 </li>
             </div>
             <div>
                 <h3>MI CUENTA</h3>
                 <li>
-                    <a>Mis pedidos</a>
+                    <a href="#">Mis pedidos</a>
                 </li>
                 <li>
-                    <a>Wishlist</a>
+                    <a href="#">Wishlist</a>
                 </li>
                 <li>
-                    <a>Productos</a>
+                    <a href="#">Productos</a>
                 </li>
                 <li>
-                    <a>Mis listas</a>
+                    <a href="#">Mis listas</a>
                 </li>
                 <li>
-                    <a>Mis recetas</a>
+                    <a href="#">Mis recetas</a>
                 </li>
             </div>
             <div>
                 <h3>CONTACTANOS</h3>
                 <li>
-                    <a>Nuestras Sucursales</a>
+                    <a href="#">Nuestras Sucursales</a>
                 </li>
                 <li>
-                    <a>Horarios y Telefonos</a>
+                    <a href="#">Horarios y Telefonos</a>
                 </li>
-                
             </div>
+            <SocialLinks />
         </div>
     )
 }

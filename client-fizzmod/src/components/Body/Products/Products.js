@@ -10,23 +10,29 @@ export default function Products(props) {
     const [ dataProducts, setDataProducts] = useState([]);
 
     useEffect(() => {
-       const arrayProducts = products.filter((item)=>{
-           function validation(element,index, array){
-               return element.value===dataFilters;
-           }
-           return item.attributes.some(validation);
-       })
-       console.log("data filters:",dataFilters)
-       console.log("Array productos: ",arrayProducts)
-       setDataProducts(arrayProducts)
-    }, [dataFilters])
+       
+        let listOfProducts = products.filter(item => {
+            if(dataFilters.length > 0){
+                let attributes = item.attributes.map(x => x.value);
+                
+                return attributes.some(x => {
+                    return dataFilters.includes(x);
+                })
+            }
+
+            return true;
+        });
+       
+       setDataProducts(listOfProducts)
+    }, [dataFilters, products])
 
     return (
         <div className="products">
             <h1 className="products__title">Productos</h1>
             <div className="products__box">
-                <Filters filters={filters} setDataFilters={setDataFilters}/>
-                <ProductsBox products={ products}/>
+                <Filters filters={filters} filtersSelected={dataFilters} setDataFilters={setDataFilters}/>
+
+                <ProductsBox products={dataProducts}/>
             </div>
         </div>
     )

@@ -13,16 +13,9 @@ export default function Body() {
         getBodyApi().then( result => {
             const arrayProducts = [];
             const arrayFilters = [];
-            result.products.forEach( item => {
-                if(item){
-                    arrayProducts.push(item);
-                }
-            });
-            result.filters.forEach( item => {
-                if(item){
-                    arrayFilters.push(item);
-                }
-            })
+            arrayProducts.push(...result.products)
+            arrayFilters.push(...result.filters)
+
             setSlides(result.slides);
             setProducts(arrayProducts);
             setFilters(arrayFilters);
@@ -31,9 +24,9 @@ export default function Body() {
     
 
     return (
-        <div>{console.log(products, filters )}
+        <div>
             <BannerSlider slides={slides}/>
-            <Products products={products} filters={filters} />
+            {products && <Products products={products} filters={filters} />}
         </div>
     )
 }

@@ -9,7 +9,7 @@ export default function TopNav() {
             {
                Links.map((data) =>{
                    return(
-                       <ul>
+                       <ul key={data.title}>
                            <a href={data.url} >{data.title}</a>
                        </ul>
                    )

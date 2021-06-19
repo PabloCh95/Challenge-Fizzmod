@@ -7,8 +7,8 @@ export default function ProductsBox({products}) {
     return (
         <div className="products-box">
            {
-               products.map( item => {
-                    return <CardProducts product={item}/>
+               products.map( (item,index) => {
+                    return <CardProducts key={index} product={item}/>
                })
            }
         </div>
@@ -18,8 +18,8 @@ export default function ProductsBox({products}) {
 function CardProducts({product}){
 
     return(
-        <a href={product.href} key={product._id}>
-            <img src={ image(product.image) }/>
+        <a href={product.href}>
+            <img src={ image(product.image) } alt={product.title}/>
             <p>{ product.title }</p>
             <p>{ product.price.listPrice }</p>
             <p>{ product.price.sellingPrice }</p>

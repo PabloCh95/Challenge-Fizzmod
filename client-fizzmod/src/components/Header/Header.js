@@ -10,7 +10,7 @@ export default function Header() {
     return (
         <div className="header">
              <div className="header__top">
-                 <img src={ Logo } />
+                 <a href="/"><img src={ Logo } alt="Fizzmod"/></a>
                  <div className="header__top__components">
                     <TopNav />
                     <Search />

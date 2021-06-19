@@ -6,7 +6,7 @@ import './Search.scss'
 export default function Search() {
     return (
         <div className='top-search'>
-            <AiOutlineSearch color="#808080" size="2rem" fontWeight="100" /> <input placeholder="Buscar Producto..." type="text" />
+            <label htmlFor="input-search"><AiOutlineSearch color="#808080" size="2rem" fontWeight="100"   /> </label> <input placeholder="Buscar Producto..." type="text" id="input-search"/>
             <ShoppingCart />
         </div>
     )

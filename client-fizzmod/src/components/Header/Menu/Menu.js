@@ -22,7 +22,7 @@ export default function Menu() {
         <div className="menu">
             {menuData.map( (data) => {
                 
-               return(<ul>
+               return(<ul key={data.title}>
                     <a href={data.href}>{data.title}</a>
                 </ul>);
             })

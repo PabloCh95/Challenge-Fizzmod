@@ -5,16 +5,26 @@
   background-color: $dark;
   color: $white-color;
   justify-content: space-evenly;
+  align-items: flex-start;
+  div {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
   h3 {
     font-size: small;
     text-align: start;
+    padding-bottom: 0.5rem;
     border-bottom: 1px solid $white-color;
   }
   li {
     text-align: start;
     list-style: none;
+    margin-top: 0.5rem;
     a {
       text-decoration: none;
+      color: $white-color;
+      font-size: small;
+      font-family: "Arial";
     }
   }
 }
