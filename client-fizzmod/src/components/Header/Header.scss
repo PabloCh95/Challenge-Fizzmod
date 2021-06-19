@@ -19,9 +19,43 @@
   &__menu {
     background-color: $primary-color;
   }
-  @media only screen and (max-width: 520px) {
+  &__menu-hamburguesa {
+    display: none;
+    ul {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    &__menu {
+      display: none;
+    }
+    &__top__components {
+      display: none;
+    }
     &__top {
-      &__a {
+      border: 1px solid red;
+      height: 5rem;
+      align-items: center;
+      a {
+      }
+    }
+
+    &__menu-hamburguesa {
+      display: flex;
+      border: 1px solid $dark;
+      margin: 2rem 2rem 2rem 0;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      input[type="checkbox"] {
+        display: none;
+      }
+      input:checked ~ ul {
+        display: block;
       }
     }
   }
