@@ -1,8 +1,10 @@
 import React from 'react'
 import Logo from '../../assets/svg/logo_fizzmod.svg'
+import {AiOutlineMenu} from 'react-icons/ai';
 import Menu from './Menu'
 import Search from './Search'
 import TopNav from './TopNav'
+import NavContent from './NavContent';
 
 import './Header.scss';
 
@@ -19,6 +21,11 @@ export default function Header() {
              <div className="header__menu">
              <Menu/>
              </div>
+             <nav className="header__menu-hamburguesa">
+                 <input type="checkbox" id="checkbox" className="header__checkbox"/>
+                 <label htmlFor="checkbox"><AiOutlineMenu/></label>
+                 <NavContent />
+            </nav>
         </header>
     )
 }
