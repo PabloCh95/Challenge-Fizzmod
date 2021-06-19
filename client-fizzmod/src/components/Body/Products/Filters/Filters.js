@@ -38,7 +38,7 @@ function Checkbox({data, onChangeFilters }){
         return (<div className="filter-box__checkbox" key={item}>
             <input className="filter-box__input" type="checkbox" value={item} id={item} onChange={onChangeFilters}/>
             <span className="filter-box__box" id={item} htmlFor={item}><FaCheck color="#fff" size="1rem"/></span>
-            <label htmlFor={item}>{item}</label>
+            <label className="filter-box__label "htmlFor={item}>{item}</label>
         </div>)
      })}
    </form>)

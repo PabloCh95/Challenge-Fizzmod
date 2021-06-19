@@ -28,7 +28,9 @@ export default function Products(props) {
 
     return (
         <div className="products">
-            <h1 className="products__title">Productos</h1>
+            <div className="products__title-box">
+            <p></p><h1 className="products__title">Productos</h1><p></p>
+            </div>
             <div className="products__box">
                 <Filters filters={filters} filtersSelected={dataFilters} setDataFilters={setDataFilters}/>
 

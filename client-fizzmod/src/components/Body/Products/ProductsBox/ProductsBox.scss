@@ -3,7 +3,36 @@
 .products-box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  a {
+  margin: 0 0 2rem 2rem;
+  a,
+  a:active,
+  a:visited,
+  a:link,
+  a:hover {
     text-decoration: none;
+  }
+  &__listPrice {
+    text-decoration: line-through;
+    color: $grey;
+  }
+  &__sellingPrice {
+    color: $primary-color;
+    font-weight: bold;
+  }
+  &__desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    color: $white-color;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 20%;
+    height: 13%;
+    border-radius: 100%;
+    position: sticky;
+  }
+  &__title {
+    color: $dark;
   }
 }
