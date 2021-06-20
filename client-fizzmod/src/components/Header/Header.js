@@ -23,7 +23,7 @@ export default function Header() {
              </div>
              <nav className="header__menu-hamburguesa">
                  <input type="checkbox" id="checkbox" className="header__checkbox"/>
-                 <label htmlFor="checkbox"><AiOutlineMenu/></label>
+                 <label htmlFor="checkbox"><AiOutlineMenu color="#fff"/></label>
                  <NavContent />
             </nav>
         </header>

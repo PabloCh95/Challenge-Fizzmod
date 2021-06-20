@@ -27,8 +27,7 @@
   }
   @media only screen and (max-width: 420px) {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
     &__menu {
       display: none;
@@ -37,25 +36,50 @@
       display: none;
     }
     &__top {
-      border: 1px solid red;
       height: 5rem;
       align-items: center;
+      justify-content: center;
       a {
       }
     }
 
     &__menu-hamburguesa {
       display: flex;
-      border: 1px solid $dark;
-      margin: 2rem 2rem 2rem 0;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
+      overflow: hidden;
       height: 50%;
+      background-color: $dark;
+
+      label {
+        display: flex;
+        width: 20%;
+        border: 1px solid $dark;
+        height: 1.5rem;
+        align-items: center;
+        justify-content: center;
+      }
       input[type="checkbox"] {
         display: none;
       }
+
       input:checked ~ ul {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        text-align: center;
+        background-color: $primary-color;
+        width: 100%;
+        margin: 0;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: $white-color;
+            justify-content: flex-start;
+          }
+        }
       }
     }
   }

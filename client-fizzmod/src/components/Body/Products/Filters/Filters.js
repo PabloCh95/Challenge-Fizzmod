@@ -19,7 +19,7 @@ const onChangeFilters= (event) =>{
               filters.map( (item, index) =>{
                   
 
-                  return(<div key={index}>
+                  return(<div className="filter-box__content"key={index}>
                       <h1 className="filter-box__h1-title">{item.title}</h1>
                         <Checkbox data={item} onChangeFilters={onChangeFilters}/>
                       </div>)
