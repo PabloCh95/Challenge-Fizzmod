@@ -4,6 +4,9 @@
   display: flex !important;
   background-color: $white-color;
   flex-direction: column;
+  &__components {
+    display: none;
+  }
   &__top {
     display: flex;
     flex-direction: row;
@@ -25,21 +28,22 @@
       display: none;
     }
   }
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 740px) {
     display: flex;
     flex-direction: column;
     width: 100%;
     &__menu {
       display: none;
     }
-    &__top__components {
-      display: none;
+    &__components {
+      display: flex;
     }
     &__top {
       height: 5rem;
       align-items: center;
       justify-content: center;
-      a {
+      &__components {
+        display: none;
       }
     }
 
