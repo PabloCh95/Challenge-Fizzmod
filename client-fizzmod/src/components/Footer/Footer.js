@@ -11,19 +11,19 @@ export default function Footer() {
                 <h3>PRODUCTOS</h3>
             <ul>
                 <li>
-                    <a href="#">Compre Junto</a>
+                    <a href="https://fizzmod.com/">Compre Junto</a>
                 </li>
                 <li>
-                    <a href="#">Kit Look</a>
+                    <a href="https://fizzmod.com/">Kit Look</a>
                 </li>
                 <li>
-                    <a href="#">Completa tu compra</a>
+                    <a href="https://fizzmod.com/">Completa tu compra</a>
                 </li>
                 <li>
-                    <a href="#">Shop the look</a>
+                    <a href="https://fizzmod.com/">Shop the look</a>
                 </li>
                 <li>
-                    <a href="#">Sin Stock</a>
+                    <a href="https://fizzmod.com/">Sin Stock</a>
                 </li>
             </ul>
             </div>
@@ -31,19 +31,19 @@ export default function Footer() {
                 <h3>MI CUENTA</h3>
             <ul>
                 <li>
-                    <a href="#">Mis pedidos</a>
+                    <a href="https://fizzmod.com/">Mis pedidos</a>
                 </li>
                 <li>
-                    <a href="#">Wishlist</a>
+                    <a href="https://fizzmod.com/">Wishlist</a>
                 </li>
                 <li>
-                    <a href="#">Productos</a>
+                    <a href="https://fizzmod.com/">Productos</a>
                 </li>
                 <li>
-                    <a href="#">Mis listas</a>
+                    <a href="https://fizzmod.com/">Mis listas</a>
                 </li>
                 <li>
-                    <a href="#">Mis recetas</a>
+                    <a href="https://fizzmod.com/">Mis recetas</a>
                 </li>
             </ul>
             </div>
@@ -51,10 +51,10 @@ export default function Footer() {
                 <h3>CONTACTANOS</h3>
             <ul>
                 <li>
-                    <a href="#">Nuestras Sucursales</a>
+                    <a href="https://fizzmod.com/">Nuestras Sucursales</a>
                 </li>
                 <li>
-                    <a href="#">Horarios y Telefonos</a>
+                    <a href="https://fizzmod.com/">Horarios y Telefonos</a>
                 </li>
             </ul>
             </div>

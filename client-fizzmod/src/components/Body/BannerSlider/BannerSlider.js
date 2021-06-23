@@ -9,6 +9,7 @@ export default function BannerSlider({slides}) {
 
     return (
         <Carousel
+            className="carousel"
             indicators={false}
             navButtonsAlwaysVisible={true}
             navButtonsProps={{

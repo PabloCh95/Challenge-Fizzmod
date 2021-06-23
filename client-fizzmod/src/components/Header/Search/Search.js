@@ -7,7 +7,7 @@ export default function Search() {
     return (
         <div className='top-search'>
             <div className="top-search__input-box">
-            <label htmlFor="input-search"><AiOutlineSearch color="#808080" size="2rem" fontWeight="100"   /> </label> <input placeholder="Buscar Producto..." type="text" id="input-search"/>
+            <label htmlFor="search-products"><AiOutlineSearch color="#808080" size="2rem" fontWeight="100"   /> </label> <input placeholder="Buscar Producto..." type="text" id="search-products"/>
             </div>
             <ShoppingCart />
         </div>

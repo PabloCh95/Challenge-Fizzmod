@@ -4,9 +4,6 @@
   display: flex !important;
   background-color: $white-color;
   flex-direction: column;
-  &__components {
-    display: none;
-  }
   &__top {
     display: flex;
     flex-direction: row;
@@ -35,15 +32,17 @@
     &__menu {
       display: none;
     }
-    &__components {
-      display: flex;
-    }
+
     &__top {
-      height: 5rem;
+      height: auto;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       &__components {
-        display: none;
+        display: flex;
+        ul {
+          display: none;
+        }
       }
     }
 
