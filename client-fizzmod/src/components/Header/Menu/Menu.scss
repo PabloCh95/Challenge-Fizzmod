@@ -1,0 +1,16 @@
+@import "../../../scss/index.scss";
+
+.menu {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+}
